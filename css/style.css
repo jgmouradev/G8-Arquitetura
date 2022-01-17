@@ -1,0 +1,313 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500&family=Nunito:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+html{
+    scroll-behavior: smooth;
+}
+
+*{
+    margin: 0;
+    padding:0;
+    list-style: none;
+    text-decoration: none;
+    font-family: Arial,sans-serif;
+}
+
+body{
+    background: #e9ecef;
+}
+
+img{
+    max-width: 100%;
+    display: block;
+    border-radius: 5px;
+}
+p{
+    font-family: 'Montserrat', sans-serif;
+}
+
+/*Seção do Banner*/
+
+.responsive{
+    width: 100%;
+    height: auto;
+    min-height: 500px;
+
+}
+
+
+/*Header e Menu*/
+
+.header{
+    background:goldenrod;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    align-items: center;
+    flex-wrap: wrap;
+    position: fixed;
+    width: 100%;
+}
+
+.logo a{
+    color:white;
+    font-size:2.25rem;
+    text-transform: uppercase;
+    font-family: 'Comfortaa', cursive;
+}
+
+.menu{
+    display: flex;
+}
+.menu li{
+    margin-left: 20px;
+}
+.menu li a{
+    display: block;
+    padding: 10px;
+    
+}
+
+.menu a{
+    color:white;
+    border: 1px solid white;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: 100;
+    font-family: 'Comfortaa', cursive;
+}
+
+.menu a:hover{
+    border: 1px solid black;
+    color:black;
+}
+
+/*Section Empresa - Quem Somos*/
+
+.empresa h1{
+    color:black;
+    font-size: 2.25rem;
+    font-weight: 100;
+    letter-spacing:10px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 50px;
+    font-family: 'Nunito', sans-serif;
+}
+
+.empresa img{
+    width:450px;
+    height: 400px;
+    margin-top: 55px;
+}
+.quemsomos{
+    display:flex;
+    justify-content: center;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding:10px;
+    
+}
+.quemsomos p{
+    
+    margin-top: 80px;
+    margin-left: 20px;
+    margin-right: 50px;
+    line-height:1.8;
+    text-align:justify;
+}
+
+/*Section Projetos*/
+
+.projetos h1{
+    color:black;
+    font-size: 2.25rem;
+    font-weight: 100;
+    letter-spacing:10px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 40px;
+    font-family: 'Nunito', sans-serif;
+}
+.flex img{
+    width: 490px;
+    height:300px;
+    border-radius: 5px;
+}
+.flex img:hover{
+    opacity: 0.6;
+    
+}
+.flex p{
+    text-align: center;
+    text-transform: uppercase;
+    background: black;
+    color: white;
+    font-weight: 100;
+    max-width: 490px;
+    border-radius: 5px;
+    margin-top: 7px;
+}
+.flex{
+   display: flex;
+   flex-wrap: wrap;
+   flex-direction: row;
+   max-width:1000px;
+   margin: 0 auto;
+   padding: 10px;
+}
+.flex > div{
+    flex: 1 1 420px;
+    margin: 10px;
+}
+
+
+
+/*Section Serviços*/
+
+.serviços{
+    width: 100%;
+    margin: 0 auto;
+    background:#e9ecef;
+}
+.serviços h1{
+    color:black;
+    font-size: 2.25rem;
+    font-weight: 100;
+    letter-spacing:10px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-family: 'Nunito', sans-serif;
+}
+.cardsflex{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content:space-around;
+    grid-gap:40px;
+    max-width:1000px;
+    margin: 0 auto;
+    
+}
+.cards{
+    width: 400px;
+    height:480px;
+    background:lightgray;
+    border-radius:5px;
+    max-width: 1000px;
+}
+.cards img{
+    height: 350px;
+    width: 400px;
+}
+.cards h2{
+    text-align: center;
+    padding: 5px;
+    font-family: 'Nunito', sans-serif;
+}
+.cards p{
+    text-align: center;
+}
+
+/* Section Contato*/
+.contato{
+    width: 100%;
+    margin: 0 auto;
+    background:#e9ecef;
+}
+.contato h2{
+    color:black;
+    font-size: 2.25rem;
+    font-weight: 100;
+    letter-spacing:10px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    font-family: 'Nunito', sans-serif;
+}
+.contato p{
+    text-align: center;
+    font-weight: bold;
+}
+.flex_form{
+    display: flex;
+    justify-content:center;
+    flex-direction: column;
+    text-align:center;
+    padding: 30px;
+    opacity: 0.9;
+}
+
+input[type=text]{
+  width: 65%;
+  background:lightgray;
+  margin: 8px 0;
+  padding: 14px;
+  border-radius:5px;
+  border: none;
+  outline: none;
+
+}
+textarea{
+    width: 65%;
+    margin: 8px 0;
+    padding: 14px;
+    border-radius:5px;
+    background: lightgray;
+    border: none;
+    outline: none;
+    resize: none;
+}
+
+input[type=button]{
+  width:35%;
+  background-color:#000;
+  color:#fff;
+  text-transform: uppercase;
+  font-weight: bolder;
+  border-radius:5px;
+  border:none;
+  margin: 8px 0;
+  padding: 14px;
+  outline: none;
+
+}
+input[type=button]:hover{
+  box-shadow:0 0 1em #ced4da;
+}
+
+.redesocial ul{
+    display: flex;
+    justify-content: center;
+    
+}
+.redesocial li{
+    padding:30px;
+    margin-bottom: -35px;
+}
+
+/*Footer*/
+
+.footer{
+    background:goldenrod;
+    
+}
+.footer h1{
+    padding: 20px;
+    color:black;
+    font-size: 1.25rem;
+    font-weight: 100;
+    text-align: center;
+}
+
+.js .js-scroll{
+    opacity: 0;
+}
+.js .js-scroll.ativo{
+    opacity:1;
+}
+
+

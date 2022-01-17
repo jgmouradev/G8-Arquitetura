@@ -1,0 +1,157 @@
+/*Layout for smaller devices*/
+
+@media(min-width:320px) and (max-width:499px){
+    .menu{
+        display:flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 0 auto;
+        margin-left: -60px;
+    }
+    .menu li{
+        margin-top:30px;
+    }
+    .quemsomos p{
+        margin-top: 40px;
+    }
+
+    .empresa img{
+		width: 230px;
+		height: 200px;
+	}
+	.quemsomos{
+		flex-wrap: wrap;
+	}
+    .flex div{
+        margin-top: 40px;
+    }
+    .flex img{
+        width: 200px;
+        height:200px;
+        margin: 0 auto;
+    }
+    .flex p{
+        max-width: 200px;
+        margin: 0 auto;
+        margin-top: 7px;
+    }
+    .cards{
+        height: 365px;
+        width: 215px;
+    }
+    .cards img{
+        height: 174px;
+        width: 215px;
+    }
+    input[type=button]{
+        width:100%;
+        
+      }
+    
+}
+
+/*Layout for small devices*/
+@media(min-width:500px) and (max-width:767px){
+    
+    .menu{
+		justify-content: center;
+	}
+	.menu li{
+   margin-top: 20px;
+}
+	.empresa img{
+		width: 365px;
+		height: 275px;
+	}
+	.quemsomos{
+		flex-wrap: wrap;
+	}
+	.quemsomos p{
+    margin-top: 15px;
+    margin-left: 70px;
+    margin-right: 80px;
+    }
+    .flex img{
+        width: 250px;
+        height:300px;
+    }
+    .flex > div{
+        flex: 1 1 110px;
+        margin: 10px;
+    }
+    .cards{
+        width: 195px;
+        height: 385px;
+    }
+    .cards img{
+        width: 190px;
+        height: 190px;
+    }
+       
+}
+@media(min-width:500px) and (max-width:678px){
+    .flex{
+        flex-direction: column;
+        align-items: center;
+    }
+    .cardsflex{
+        flex-direction: column;
+        align-items: center;
+    }
+    
+}
+
+/* Layout for tablets*/
+
+@media(min-width:768px) and (max-width:952px){
+	.menu{
+		justify-content: center;
+	}
+	.menu li{
+   margin-top: 20px;
+}
+	.empresa img{
+		width: 420px;
+		height: 330px;
+		margin-top: 25px;
+	}
+	.quemsomos{
+		flex-wrap: wrap;
+	}
+	.quemsomos p{
+    margin-top: 15px;
+    margin-left: 70px;
+    margin-right: 80px;
+    }
+    .flex img{
+        height: 320px;
+        width: 300px;
+    }
+    .flex > div{
+    flex: 1 1 110px;
+    margin: 10px;
+	}
+	.cardsflex{
+		grid-gap: 40px;
+	}
+    .cards{
+        width: 300px;
+        height: 340px;
+    }
+    .cards img{
+        width: 300px;
+        height: 190px;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
